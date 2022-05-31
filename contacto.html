@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https: //fonts.googleapis.com/css2? family= Montserrat:ital,wght@1,300 & display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./assets/logo-blanco.png" type="image/x-icon">
+    <title>Contacto - Look at Me</title>
+</head>
+
+<body>
+    <header class="topheader">
+        <nav class="topnav">
+            <a href="./index.html">
+                <img src="./assets/logo-negro.png" class="logo" /></a>
+
+            <button class="open-menu" aria-label="Abrir Menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="menu">
+                <button class="close-menu" aria-label="Cerrar Menú">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-contacto">
+        <form action="#">
+            <label for="nombreApellido">Nombre y Apellido: </label>
+            <input type="text" placeholder="Ingresa tu nombre y apellido" id="nombreApellido" class="input-padron"
+                required />
+
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" class="input-padron" required placeholder="email@dominio.com" />
+
+            <label for="tel">Teléfono</label>
+            <input type="tel" id="tel" class="input-padron" required placeholder="(xx) xxxx xxxx" />
+
+            <label for="text-areamensaje">Mensaje</label>
+            <textarea id="text-areamensaje" cols="70" rows="10" class="input-padron"></textarea>
+
+            <fieldset>
+                <legend>¡Como te gustaria que te contactemos?</legend>
+
+                <label for="radio-email">
+                    <input type="radio" name="contacto" value="email" id="radio-email" />Email</label>
+
+                <label for="radio-telefono">
+                    <input type="radio" name="contacto" value="telefono" id="radio-telefono" />Teléfono</label>
+
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp"
+                        checked />WhatsApp</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>¡En qué horario preferis ser atendido?</legend>
+                <select>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </fieldset>
+
+            <label for=""><input type="checkbox" class="checkbox" checked />¿Te gustaria
+                recibir novedades de Look at Me?
+            </label>
+
+            <button>Enviar Formulario</button>
+        </form>
+    </main>
+
+    <footer>
+        <img src="./assets/logo-blanco.png" class="footer-logo" />
+        <p class="copyright">&copy Copyright By Ethel Maidana - 2022</p>
+    </footer>
+</body>
+
+</html>

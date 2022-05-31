@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https: //fonts.googleapis.com/css2? family= Montserrat:ital,wght@1,300 & display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/42786fc4a2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/productos.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./assets/logo-blanco.png" type="image/x-icon">
+  <title>Productos - Look at Me</title>
+</head>
+
+<body>
+  <header class="topheader">
+    <nav class="topnav">
+      <a href="./index.html">
+        <img src="./assets/logo-negro.png" class="logo" /></a>
+
+      <button class="open-menu" aria-label="Abrir Menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="menu">
+        <button class="close-menu" aria-label="Cerrar Menú">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./productos.html">Productos</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+        <li>
+          <a href="#cartList">
+            <div id="cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span id="totalItems"></span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="list-products" id="listProducts">
+    <ul id="listProducts">
+      <li>
+        <h2>Champú Absolut Repair</h2>
+        <img src="./assets/Shampoo 300ml.png" alt="Imagen del producto" class="img-product" />
+        <p class="producto-descripcion">
+          Champú Absolut Repair Gold reparador y fortalecedor de las áreas más
+          dañadas del cabello con proteína de quínoa dorada. Para cabello muy
+          dañado y debilitado. El cabello queda instantáneamente reconstruido
+          y transformado desde el interior. Limpia, fortalece, repara,
+          reconstruye y protege el cabello. La parte interna del cabello se
+          fortalece. La fibra se repara y la superficie está protegida de
+          cualquier agresión.
+        </p>
+        <p class="producto-precio">$ 3000.00</p>
+        <button onclick="addProduct('Champú Absolut Repair', 3000, 1)">
+          Comprar
+        </button>
+      </li>
+
+      <li>
+        <h2>Champú en gel anti acumulación</h2>
+        <img src="./assets/absolut condi.png" alt="Imagen del producto" class="img-product" />
+        <p class="producto-descripcion">
+          Diseñado para limpiar rizos y ondas, de la manera pro. Suavemente
+          elimina residuos e impurezas mientras aporta hidratación sin
+          sensibilizar el cuero cabelludo ni generar rotura.
+        </p>
+        <p class="producto-precio">$ 2000.00</p>
+        <button onclick="addProduct('Champú en gel anti acumulación', 2000, 1)">
+          Comprar
+        </button>
+      </li>
+
+      <li>
+        <h2>Mascarilla hidratante intensiva</h2>
+        <img src="./assets/Product_Packshot.png" alt="Imagen del producto" class="img-product" />
+        <p class="producto-descripcion">
+          Diseñada para tratar los rizos y las ondas de la manera más pro.
+          Hidrata profundamente y ayuda a desenredar los rizos y las ondas
+          para un resultado libre y nautral. El cabello se vuelve hasta 2
+          veces con mas brillo y el encrespamiento se controla.
+        </p>
+        <p class="producto-precio">$ 2500.00</p>
+        <button onclick="addProduct('Mascarilla hidratante intensiva', 2500, 1)">
+          Comprar
+        </button>
+      </li>
+
+      <li>
+        <h2>Máscara Abolut Repair para cabellos secos y dañados</h2>
+        <img src="./assets/absolut mask.png" alt="Imagen del producto" class="img-product" />
+        <p class="producto-descripcion">
+          Ofrece la experiencia definitiva de reparación profunda profesional
+          para el cabello dañado y seco. 77% menos de daños en la fibra 7
+          veces más brillante y suave al tacto.
+        </p>
+        <p class="producto-precio">$ 4000.00</p>
+        <button onclick="addProduct('Máscara Abolut Repair', 4000, 1)">
+          Comprar
+        </button>
+      </li>
+
+      <li>
+        <h2>Acondicionador Absolut Repair para cabellos secos y dañados</h2>
+        <img src="./assets/absolut mask.png" alt="Imagen del producto" class="img-product" />
+        <p class="producto-descripcion">
+          Reconstructor instantáneo, nutre y repara instantáneamente el
+          cabello dañado, fortaleciéndolo visiblemente, aportando suavidad y
+          brillo, pero con un acabado ligero, sin peso..
+        </p>
+        <p class="producto-precio">$ 2000.00</p>
+        <button onclick="addProduct('Acondicionador Abolut Repair', 2000, 1)">
+          Comprar
+        </button>
+      </li>
+    </ul>
+
+    <section class="cartList" id="cartList">
+      <div class="principalWrapper">
+        <h2>Estos son tus productos elegidos</h2>
+        <div class="cart-wrapper" id="cartWrapper">
+          <div class="emptyProductsMessage">
+            No tenés productos seleccionados!
+          </div>
+        </div>
+        <div class="total-items">
+          <span>
+            <strong>Total:</strong>
+            <span id="totalProducts"></span>
+            $
+          </span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="./assets/logo-blanco.png" class="footer-logo" />
+    <p class="copyright">&copy Copyright By Ethel Maidana - 2022</p>
+  </footer>
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

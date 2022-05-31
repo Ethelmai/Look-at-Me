@@ -1,0 +1,109 @@
+@import "_reset";
+@import "_variables";
+
+.list-products {
+  background-color: $text-color-inverse;
+  ul {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+    li {
+      background-color: $theme-color;
+      text-align: center;
+      width: 50%;
+      vertical-align: top;
+      margin: 100px 200px;
+      padding: 20px;
+      box-sizing: border-box;
+      border: 2px solid $text-color;
+      border-radius: 10px;
+      @include boxShadow($secundary-color);
+      h2 {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      button {
+        @include btn();
+        margin: 10px;
+        &:hover {
+          background-color: $primary-color;
+          transform: scale(1.2);
+        }
+      }
+    }
+    .producto-descripcion {
+      font-size: 18px;
+    }
+    .producto-precio {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  }
+  .cartList {
+    background-color: $theme-color;
+    text-align: center;
+    h2 {
+      color: $primary-color;
+    }
+    .principalWrapper {
+      padding: 20px;
+    }
+    .cart-wrapper {
+      padding: 30px;
+      line-height: 2em;
+    }
+    .total-items {
+      padding: 20px;
+      @include boxShadow($shadow-color);
+      padding: 20px;
+      width: 66px;
+      margin: 0 550px;
+    }
+  }
+}
+/*contacto*/
+.main-contacto {
+  margin: 150px 400px;
+  background-color: $theme-color;
+  label,
+  legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+  }
+  .input-padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+  }
+  .checkbox {
+    margin: 20px 0;
+  }
+  button {
+    @include btn();
+    &:hover {
+      background-color: $primary-color;
+      transform: scale(1.2);
+    }
+  }
+}
+
+/*footer*/
+footer {
+  background-image: url(/assets/img-footer.jpg);
+  text-align: center;
+  padding: 40px;
+}
+.copyright {
+  color: $text-color-inverse;
+  font-size: 13px;
+  padding: 140px 0 40px;
+}
+.footer-logo {
+  position: absolute;
+  width: 18%;
+  left: 550px;
+  height: 200px;
+}

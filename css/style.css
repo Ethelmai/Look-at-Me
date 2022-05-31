@@ -1,0 +1,533 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #eeeeee;
+  color: black;
+  overflow-x: hidden;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #eeeeee;
+  color: black;
+  overflow-x: hidden;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.list-products {
+  background-color: white;
+}
+
+.list-products ul {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.list-products ul li {
+  background-color: #eeeeee;
+  text-align: center;
+  width: 50%;
+  vertical-align: top;
+  margin: 100px 200px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 5px 30px #da947b;
+          box-shadow: 2px 5px 30px #da947b;
+}
+
+.list-products ul li h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.list-products ul li button {
+  width: 40%;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #da947b;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.list-products ul li button:hover {
+  background-color: #e7754c;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.list-products ul .producto-descripcion {
+  font-size: 18px;
+}
+
+.list-products ul .producto-precio {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.list-products .cartList {
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+.list-products .cartList h2 {
+  color: #e7754c;
+}
+
+.list-products .cartList .principalWrapper {
+  padding: 20px;
+}
+
+.list-products .cartList .cart-wrapper {
+  padding: 30px;
+  line-height: 2em;
+}
+
+.list-products .cartList .total-items {
+  padding: 20px;
+  -webkit-box-shadow: 2px 5px 30px #a7a5a5;
+          box-shadow: 2px 5px 30px #a7a5a5;
+  padding: 20px;
+  width: 66px;
+  margin: 0 550px;
+}
+
+/*contacto*/
+.main-contacto {
+  margin: 150px 400px;
+  background-color: #eeeeee;
+}
+
+.main-contacto label,
+.main-contacto legend {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.main-contacto .input-padron {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+}
+
+.main-contacto .checkbox {
+  margin: 20px 0;
+}
+
+.main-contacto button {
+  width: 40%;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #da947b;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.main-contacto button:hover {
+  background-color: #e7754c;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+/*footer*/
+footer {
+  background-image: url(/assets/img-footer.jpg);
+  text-align: center;
+  padding: 40px;
+}
+
+.copyright {
+  color: white;
+  font-size: 13px;
+  padding: 140px 0 40px;
+}
+
+.footer-logo {
+  position: absolute;
+  width: 18%;
+  left: 550px;
+  height: 200px;
+}
+
+/*nav*/
+.topheader {
+  -webkit-box-shadow: 2px 5px 30px #da947b;
+          box-shadow: 2px 5px 30px #da947b;
+  position: fixed;
+  background-color: #eeeeee;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.topheader .topnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  max-width: 980px;
+  margin: 0 auto;
+  /*menu*/
+}
+
+.topheader .topnav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+  padding: 0 15px;
+}
+
+.topheader .topnav .open-menu,
+.topheader .topnav .close-menu {
+  display: none;
+}
+
+.topheader .topnav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topheader .topnav .menu li {
+  padding: 0 15px;
+}
+
+.topheader .topnav .menu li a {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 50px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #eeeeee;
+  color: black;
+  overflow-x: hidden;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*main*/
+.principal {
+  background-color: white;
+  padding: 84px 0;
+}
+
+.principal .img-home {
+  width: 100%;
+  margin: 30px 0 0;
+}
+
+.principal .titulo {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 50px;
+  padding: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(224, 222, 222, 0.089);
+}
+
+.principal .contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+}
+
+.principal .contenedor .descripcion-img,
+.principal .contenedor .animacion {
+  margin: 0 240px;
+  -webkit-animation-name: mover;
+          animation-name: mover;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
+}
+
+@keyframes mover {
+  0% {
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
+}
+
+.principal .descripcion {
+  text-align: center;
+  -webkit-box-shadow: 2px 5px 30px #da947b;
+          box-shadow: 2px 5px 30px #da947b;
+  width: 50%;
+  padding: 20px;
+  margin: 0 300px;
+  border-radius: 17px;
+}
+
+.diferenciales .titulo {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.diferenciales .contenido-diferenciales {
+  text-align: center;
+  line-height: 2em;
+  padding: 40px 10px;
+}
+
+.diferenciales .contenido-diferenciales .items::before {
+  content: "★";
+  color: #da947b;
+}
+
+.diferenciales .video {
+  margin: 0 400px;
+}
+
+.mapa {
+  width: 80%;
+  padding: 20px 350px;
+}
+
+.mapa .mapa-contenido {
+  width: 50%;
+}
+
+.mapa .mapa-contenido .titulo {
+  text-align: center;
+}
+
+/*mobile*/
+@media (max-width: 950px) {
+  .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #da947b;
+    height: 100%;
+    width: 25%;
+    left: 0;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+  }
+  .menu li {
+    padding: 0;
+  }
+  .menu a {
+    color: white;
+    line-height: 60px;
+  }
+  .close-menu {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    padding: 20px 15px;
+    color: white;
+  }
+  .open-menu,
+  .close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  .open-menu:focus:not(:focus-visible), .open-menu:focus:not(:focus-visible),
+  .close-menu:focus:not(:focus-visible),
+  .close-menu:focus:not(:focus-visible) {
+    outline: none;
+  }
+  .menu_opened {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+/*# sourceMappingURL=style.css.map */

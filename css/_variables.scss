@@ -1,0 +1,23 @@
+$theme-color: rgb(238, 238, 238);
+$primary-color: rgb(231, 117, 76);
+$secundary-color: rgb(218, 148, 123);
+$text-color-inverse: white;
+$text-color: black;
+$back-color: rgba(224, 222, 222, 0.089);
+$shadow-color: rgb(167, 165, 165);
+
+@mixin boxShadow($color) {
+  box-shadow: 2px 5px 30px $color;
+}
+@mixin btn() {
+  width: 40%;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: $text-color-inverse;
+  background-color: $secundary-color;
+  border: none;
+  border-radius: 5px;
+  transition: 1s all;
+  cursor: pointer;
+}
